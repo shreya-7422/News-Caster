@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        
+
+    <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="logo">
+            <img src='./download.png' alt="company logo" style="padding-left: 5%;">
+        </a>
+        <div class="navlink">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="Astrology" onclick="onNav('Astrology')">Astrology</li>
+                <li class="hover-link  nav-item" id="Market" onclick="onNav('Market')">Market</li>
+                <li class="hover-link  nav-item" id="politics" onclick="onNav('politics')">Politics</li>
+                <li class="hover-link  nav-item" id="Health" onclick="onNav('Health')">Health</li>
+            </ul>
+        </div>
+        <div class="search-bar flex">
+            <input id="search-text" type="text" class="newsinput" placeholder="e.g. Business">
+            <button id="search-button" class="searchb">Search</button>
+        </div>
+    </div>
+    </nav>
+    <section class="hero-section">
+        <div class="hero-text container">
+            <h1>Stay Informed, Stay Ahead</h1>
+            <p>Explore daily news on politics, markets, health, astrology and more – curated just for you.</p>
+        </div>
+    </section>
+    <div class="svg-decor">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#7c3aed" d="M47.8,-47.3C63.2,-34.5,76.4,-17.2,75.8,-0.8C75.2,15.6,60.8,31.2,45.4,43.4C30.1,55.6,14.9,64.4,0.3,64.1C-14.3,63.8,-28.6,54.5,-39.3,43.3C-49.9,32,-56.9,18.8,-60.5,3.6C-64.1,-11.6,-64.4,-28.9,-55.6,-41.6C-46.8,-54.3,-28.9,-62.3,-10.8,-65C7.4,-67.6,14.8,-65.5,47.8,-47.3Z" transform="translate(100 100)" />
+        </svg>
+    </div>
+    
+    
+    <main>
+        <div class="decorative-blob" style="top: 0; left: 10%;"></div>
+        <div class="decorative-blob" style="bottom: 0; right: 5%;"></div>
+    
+        <!-- Card container stays inside main -->
+        <div class="card-container container flex" id="card-container"></div>
+        <div class="card-container container flex" id="card-container">
+           
+        </div>
+    </main>
+    <template id="template-news">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="card-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="title" id="title">this is title</h3>
+                <h6 class="source" id="source">end gadget</h6>
+                <p class="news-description"id="news-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatem numquam facere porro quo nulla labore eligendi at. Debitis ipsum ex nisi magnam?</p>
+            </div>
+        </div>
+    </template>
+    <footer style="text-align:center; padding:20px 0; color:var(--secondary); background-color: #eee;">
+        © 2025 News App. All rights reserved.
+    </footer>
+    
+</body>
+<script src="./script.js"></script>
+</html>
